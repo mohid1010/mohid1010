@@ -1,116 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Stress Management Chatbot</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Stress Management Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #74ebd5, #acb6e5);
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+    }
 
-        header {
-            background-color: #4a6fa5;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+    header {
+      background-color: #4a6fa5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
 
-        .info {
-            max-width: 700px;
-            text-align: center;
-            margin-bottom: 20px;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-        }
+    .info {
+      max-width: 700px;
+      text-align: center;
+      margin-bottom: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
 
-        iframe {
-            width: 350px;
-            height: 500px;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.3);
-        }
+    #botpress-container {
+      width: 360px;
+      height: 520px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      overflow: hidden;
+    }
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #4a6fa5;
-            color: white;
-            margin-top: 20px;
-        }
-        df-messenger {
-              width: 360px;
-              height: 520px;
-            }
-    </style>
-    
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #4a6fa5;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Stress Management Chatbot 🤖</h1>
-    <p>Your mental wellness companion</p>
+  <h1>Stress Management Chatbot 🤖</h1>
+  <p>Your mental wellness companion</p>
 </header>
 
 <div class="container">
-    <div class="info">
-        <h2>About the Chatbot</h2>
-        <p>
-            This AI chatbot helps users manage stress using breathing exercises,
-            relaxation techniques, motivation, and time management tips.
-        </p>
-        <p>
-            Built using <b>Botpress</b> and integrated into a website.
-            
-        </p>
-<div id="Ai-project@mohid"></div>
-      
+  <div class="info">
+    <h2>About the Chatbot</h2>
+    <p>
+      This AI chatbot helps users manage stress using breathing exercises,
+      relaxation techniques, motivation, and time management tips.
+    </p>
+    <p>
+      Built using <b>Botpress</b> and integrated into a website.
+    </p>
+  </div>
+
+  <!-- BOTPRESS CONTAINER -->
+  <div id="Ai-project_mohid"></div>
+</div>
+
+<!-- BOTPRESS SCRIPT -->
 <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
 <script>
   window.botpressWebChat.init({
     botId: "31e1e89a-7e9e-4ca8-b451-f8aa5b83c481",
     clientId: "d5f20e30-c71d-402d-af3b-b09eb8eee8cd",
-    container: '#Ai-project@mohid',
+    container: "#Ai-project_mohid",
     showCloseButton: false
-    window.botpress.open()
   });
-</script>
-<style>
-  #botpress-container {
-    width: 400px;
-    height: 500px;
-    margin: auto;
-  }
-</style>
 
-    
+  window.botpressWebChat.open();
+</script>
 
 <footer>
-    <p>© 2025 Stress Management AI | School Project</p>
+  <p>© 2025 Stress Management AI | School Project</p>
 </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
